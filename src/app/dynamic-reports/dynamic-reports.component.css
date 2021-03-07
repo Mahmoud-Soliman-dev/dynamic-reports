@@ -1,0 +1,105 @@
+/* multi select styles begin */
+:host ::ng-deep .multiselect-dropdown {
+  width: auto !important;
+  margin-bottom: 5px !important;
+}
+
+/* :host ::ng-deep .multiselect-dropdown:has(div.disabled) {
+  cursor: not-allowed !important;
+} */
+
+:host ::ng-deep .multiselect-dropdown div.disabled + div.dropdown-list {
+  visibility: hidden !important;
+}
+
+:host ::ng-deep .dropdown-multiselect--active .dropdown-multiselect__caret {
+  transform: rotateZ(0deg) !important;
+}
+
+:host ::ng-deep .multiselect-dropdown:focus,
+:host ::ng-deep .multiselect-dropdown div:focus,
+:host ::ng-deep .multiselect-dropdown div span:focus {
+  outline: unset !important;
+  border-color: #1ab394 !important;
+}
+
+:host ::ng-deep .multiselect-dropdown div.disabled span:focus {
+  border-color: #adadad !important;
+}
+
+:host
+  ::ng-deep
+  .multiselect-dropdown
+  div.disabled
+  .dropdown-btn
+  .selected-item {
+  background-color: #ccc !important;
+  border-color: #ccc !important;
+  color: #888 !important;
+}
+
+:host
+  ::ng-deep
+  .multiselect-dropdown
+  div.disabled
+  .dropdown-btn
+  .selected-item
+  a {
+  color: #888 !important;
+}
+
+:host ::ng-deep .multiselect-dropdown .dropdown-btn .selected-item {
+  border: 1px solid #1ab394 !important;
+  background-color: #1ab394 !important;
+}
+
+:host ::ng-deep .multiselect-item-checkbox input[type="checkbox"] + div:before {
+  border: 1px solid #1ab394 !important;
+  padding: 1px !important;
+}
+
+:host
+  ::ng-deep
+  .multiselect-item-checkbox
+  input[type="checkbox"]:checked
+  + div::before {
+  background-color: #1ab394 !important;
+  color: #fff !important;
+  padding: 1px !important;
+}
+
+:host ::ng-deep .multiselect-dropdown .dropdown-btn {
+  padding-right: 30px !important;
+  min-height: 35px;
+}
+
+:host ::ng-deep .dropdown-list {
+  min-width: 225px !important;
+}
+
+:host
+  ::ng-deep
+  .multiselect-item-checkbox
+  input[type="checkbox"]:disabled:checked
+  + div:before {
+  background-color: #ccc !important;
+}
+
+:host
+  ::ng-deep
+  .multiselect-item-checkbox
+  input[type="checkbox"]:disabled
+  + div:before {
+  border-color: #ccc !important;
+}
+
+:host
+  ::ng-deep
+  .multiselect-dropdown
+  .dropdown-btn
+  .dropdown-multiselect--active
+  .dropdown-multiselect__caret {
+  transform: rotateZ(180deg) !important;
+}
+
+/* multi select styles end */
